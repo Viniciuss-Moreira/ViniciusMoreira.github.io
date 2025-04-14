@@ -11,8 +11,8 @@ html {
 
 body {
   font-family: 'Inter', sans-serif;
-  background-color: #fafafa;  /* Cor de fundo suave, igual ao da Jennifer */
-  color: #111;
+  background-color: #f8f8f8;  /* Tom suave de cinza claro no fundo */
+  color: #111; /* Texto escuro */
   line-height: 1.8;
   padding: 60px 20px;
   max-width: 680px;
@@ -29,10 +29,11 @@ header h1 {
   font-size: 3rem;
   font-weight: 600;
   margin-bottom: 0.25rem;
+  color: #111; /* Cor escura para o título */
 }
 
 header p {
-  color: #555;
+  color: #555; /* Cor cinza suave para o subtítulo */
   font-size: 1.1rem;
 }
 
@@ -46,7 +47,7 @@ nav ul {
 
 nav a {
   text-decoration: none;
-  color: #111;
+  color: #111; /* Cor do link */
   font-weight: 500;
   font-size: 1rem;
   border-bottom: 2px solid transparent;
@@ -55,7 +56,7 @@ nav a {
 
 nav a:hover,
 nav a.active {
-  border-color: #111;
+  border-color: #111; /* Cor do link ao passar o mouse */
   color: #111;
 }
 
@@ -67,11 +68,12 @@ section {
 section h2 {
   font-size: 2rem;
   margin-bottom: 1.2rem;
+  color: #111; /* Cor do título das seções */
 }
 
 section p {
   font-size: 1.1rem;
-  color: #555;
+  color: #555; /* Cor do texto da seção */
   line-height: 1.6;
 }
 
@@ -100,15 +102,16 @@ section p {
   margin-bottom: 12px;
   font-size: 1.5rem;
   font-weight: 500;
+  color: #111; /* Cor do título do card */
 }
 
 .card p {
-  color: #555;
+  color: #555; /* Cor do texto dentro do card */
   font-size: 1rem;
 }
 
 .card a {
-  color: #0070f3;
+  color: #0070f3; /* Cor azul para o link */
   text-decoration: none;
   font-weight: 500;
   display: inline-block;
@@ -117,12 +120,12 @@ section p {
 }
 
 .card a:hover {
-  color: #111;
+  color: #111; /* Cor do link ao passar o mouse */
 }
 
 /* Contato */
 #contato a {
-  color: #0070f3;
+  color: #0070f3; /* Cor azul para o link de contato */
   text-decoration: none;
 }
 
@@ -135,6 +138,6 @@ footer {
   text-align: center;
   padding: 60px 0 20px;
   font-size: 0.85rem;
-  color: #999;
+  color: #999; /* Cor mais clara para o rodapé */
   border-top: 1px solid #eaeaea;
 }
