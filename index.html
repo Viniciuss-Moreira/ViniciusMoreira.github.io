@@ -5,51 +5,73 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfólio Profissional</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
-    <nav class="navbar">
-        <ul>
-            <li><a href="#hero">Início</a></li>
-            <li><a href="#projects">Projetos</a></li>
-            <li><a href="#contact">Contato</a></li>
-        </ul>
-    </nav>
+    <aside class="sidebar">
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#home" class="active"><span>//</span> Home</a></li>
+                <li><a href="#projects"><span>//</span> Projetos</a></li>
+                <li><a href="#contact"><span>//</span> Contato</a></li>
+            </ul>
+        </nav>
+    </aside>
 
-    <section id="hero" class="hero">
-        <div class="hero-content">
-            <img src="profile-placeholder.jpg" alt="Foto de Perfil" class="profile-img">
-            <h1>Seu Nome</h1>
-            <h2>Profissional de [Sua Área]</h2>
-            <div class="social-links">
-                <a href="#"><i class="fab fa-linkedin"></i></a>
-                <a href="#"><i class="fab fa-github"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
+    <main class="content">
+        <section id="home" class="section active">
+            <div class="hero">
+                <div class="hero-text">
+                    <h1 class="title-gradient">Jennifer Daleffi</h1>
+                    <h2>Desenvolvedora Front-End</h2>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="profile.jpg" alt="Foto de perfil">
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section id="projects" class="projects">
-        <h2>Projetos Recentes</h2>
-        <div class="projects-grid">
-            <!-- Repetir para cada projeto -->
-            <div class="project-card">
-                <img src="project-placeholder.jpg" alt="Projeto">
-                <h3>Título do Projeto</h3>
-                <p>Descrição breve do projeto e tecnologias utilizadas.</p>
+        <section id="projects" class="section">
+            <h2 class="section-title"><span>//</span> Projetos Recentes</h2>
+            <div class="projects-grid">
+                <article class="project-card">
+                    <div class="project-image">
+                        <img src="project1.jpg" alt="Projeto 1">
+                        <div class="project-links">
+                            <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                            <a href="#"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <h3>Landing Page Moderna</h3>
+                    <p>HTML, CSS, JavaScript</p>
+                </article>
+                <!-- Repetir outros projetos -->
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section id="contact" class="contact">
-        <h2>Entre em Contato</h2>
-        <form id="contact-form">
-            <input type="text" placeholder="Nome" required>
-            <input type="email" placeholder="Email" required>
-            <textarea placeholder="Mensagem" required></textarea>
-            <button type="submit">Enviar</button>
-        </form>
-    </section>
+        <section id="contact" class="section">
+            <h2 class="section-title"><span>//</span> Contato</h2>
+            <form class="contact-form">
+                <div class="form-group">
+                    <input type="text" placeholder="Nome" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" placeholder="Email" required>
+                </div>
+                <div class="form-group">
+                    <textarea placeholder="Mensagem" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn">
+                    <i class="fas fa-paper-plane"></i> Enviar Mensagem
+                </button>
+            </form>
+        </section>
+    </main>
 
     <script src="script.js"></script>
 </body>
