@@ -5,115 +5,101 @@
     box-sizing: border-box;
   }
   
-  body {
-    font-family: 'Inter', sans-serif;
-    background-color: #fdfdfd;
-    color: #1a1a1a;
-    line-height: 1.6;
-    padding: 0 1.5rem;
+  html {
+    scroll-behavior: smooth;
   }
   
-  /* Header */
-  header {
-    max-width: 960px;
+  body {
+    font-family: 'Inter', sans-serif;
+    background-color: #fff;
+    color: #111;
+    line-height: 1.6;
+    padding: 40px 16px;
+    max-width: 720px;
     margin: 0 auto;
-    padding: 2rem 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  }
+  
+  /* Cabeçalho */
+  header {
+    margin-bottom: 40px;
   }
   
   header h1 {
-    font-size: 1.8rem;
+    font-size: 2.2rem;
     font-weight: 600;
+    margin-bottom: 0.25rem;
   }
   
-  nav ul {
-    display: flex;
-    gap: 1.5rem;
+  header nav ul {
     list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    margin-top: 10px;
   }
   
   nav a {
     text-decoration: none;
-    color: #1a1a1a;
-    font-weight: 500;
-    transition: color 0.3s ease;
-  }
-  
-  nav a {
-    text-decoration: none;
-    color: #1a1a1a;
-    font-weight: 500;
-    transition: color 0.3s ease;
-  }
-  
-  nav a:hover {
     color: #0070f3;
+    font-weight: 500;
+    transition: color 0.3s ease;
   }
   
+  nav a:hover,
   nav a.active {
-    color: #0070f3;
-    border-bottom: 2px solid #0070f3;
+    color: #0055cc;
+    border-bottom: 2px solid #0055cc;
   }
   
-  
-  /* Sections */
+  /* Seções */
   section {
-    max-width: 960px;
-    margin: 3rem auto;
-    padding: 0 1rem;
+    margin-bottom: 60px;
   }
   
   section h2 {
-    font-size: 2rem;
+    font-size: 1.5rem;
     margin-bottom: 1rem;
-    border-bottom: 2px solid #eee;
-    padding-bottom: 0.5rem;
   }
   
   section p {
     font-size: 1rem;
-    color: #444;
+    color: #333;
   }
   
   /* Projetos */
   .grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 1.5rem;
-    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin-top: 20px;
   }
   
   .card {
-    background-color: #fff;
-    padding: 1.5rem;
     border: 1px solid #eaeaea;
+    padding: 20px;
     border-radius: 12px;
-    transition: box-shadow 0.3s ease, transform 0.2s ease;
+    transition: box-shadow 0.2s ease, transform 0.2s ease;
   }
   
   .card:hover {
-    box-shadow: 0 10px 15px rgba(0,0,0,0.05);
-    transform: translateY(-4px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+    transform: translateY(-3px);
   }
   
   .card h3 {
-    font-size: 1.2rem;
-    margin-bottom: 0.5rem;
+    margin-bottom: 8px;
   }
   
   .card p {
-    font-size: 0.95rem;
     color: #555;
   }
   
   .card a {
-    display: inline-block;
-    margin-top: 0.75rem;
     color: #0070f3;
-    text-decoration: none;
     font-weight: 500;
+    text-decoration: none;
+    margin-top: 10px;
+    display: inline-block;
   }
   
   /* Contato */
@@ -126,33 +112,11 @@
     text-decoration: underline;
   }
   
-  /* Footer */
+  /* Rodapé */
   footer {
     text-align: center;
-    padding: 2rem 0;
-    border-top: 1px solid #eee;
-    font-size: 0.9rem;
-    color: #666;
+    padding: 40px 0 20px;
+    font-size: 0.875rem;
+    color: #888;
   }
   
-  /* Responsivo */
-  @media (max-width: 600px) {
-    header {
-      flex-direction: column;
-      align-items: flex-start;
-      gap: 1rem;
-    }
-  
-    nav ul {
-      flex-direction: column;
-      gap: 0.5rem;
-    }
-  
-    section h2 {
-      font-size: 1.5rem;
-    }
-  
-    header h1 {
-      font-size: 1.5rem;
-    }
-  }  
