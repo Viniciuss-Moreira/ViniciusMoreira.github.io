@@ -1,143 +1,124 @@
-/* Reset */
+:root {
+  --primary-color: #2A2A2A;
+  --secondary-color: #F5F5F5;
+  --accent-color: #FF4D4D;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
 body {
-  font-family: 'Inter', sans-serif;
-  background-color: #f8f8f8;  /* Tom suave de cinza claro no fundo */
-  color: #111; /* Texto escuro */
-  line-height: 1.8;
-  padding: 60px 20px;
-  max-width: 680px;
-  margin: 0 auto;
-  font-size: 16px;
+  font-family: 'Arial', sans-serif;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
 }
 
-/* Cabeçalho */
-header {
-  margin-bottom: 80px;
+.navbar {
+  padding: 1.5rem;
+  position: fixed;
+  width: 100%;
+  background: rgba(42, 42, 42, 0.95);
+  z-index: 1000;
 }
 
-header h1 {
-  font-size: 3rem;
-  font-weight: 600;
-  margin-bottom: 0.25rem;
-  color: #111; /* Cor escura para o título */
-}
-
-header p {
-  color: #555; /* Cor cinza suave para o subtítulo */
-  font-size: 1.1rem;
-}
-
-nav ul {
-  list-style: none;
+.navbar ul {
   display: flex;
-  gap: 30px;
-  padding: 0;
-  margin-top: 30px;
+  justify-content: center;
+  gap: 2rem;
+  list-style: none;
 }
 
-nav a {
+.navbar a {
+  color: var(--secondary-color);
   text-decoration: none;
-  color: #111; /* Cor do link */
-  font-weight: 500;
-  font-size: 1rem;
-  border-bottom: 2px solid transparent;
-  transition: all 0.2s ease;
+  transition: color 0.3s;
 }
 
-nav a:hover,
-nav a.active {
-  color: #0070f3; /* Altere para a cor desejada para o link ativo */
-  border-bottom: 2px solid #0070f3; /* Ou qualquer estilo para destacar o link ativo */
+.navbar a:hover {
+  color: var(--accent-color);
 }
 
-/* Seções */
-section {
-  margin-bottom: 100px;
+.hero {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding-top: 80px;
 }
 
-section h2 {
-  font-size: 2rem;
-  margin-bottom: 1.2rem;
-  color: #111; /* Cor do título das seções */
+.profile-img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin-bottom: 1.5rem;
+  border: 3px solid var(--accent-color);
 }
 
-section p {
-  font-size: 1.1rem;
-  color: #555; /* Cor do texto da seção */
-  line-height: 1.6;
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  padding: 2rem;
 }
 
-/* Projetos */
-.grid {
+.project-card {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 1.5rem;
+  border-radius: 10px;
+  transition: transform 0.3s;
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+}
+
+.contact {
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+#contact-form {
+  max-width: 600px;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
-  gap: 32px;
-  margin-top: 20px;
+  gap: 1rem;
 }
 
-.card {
-  border: 1px solid #eaeaea;
-  padding: 24px;
-  border-radius: 12px;
-  background-color: #fff;
-  transition: all 0.2s ease;
+input, textarea, button {
+  padding: 0.8rem;
+  border: none;
+  border-radius: 5px;
 }
 
-.card:hover {
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.04);
-  transform: translateY(-4px);
+button {
+  background-color: var(--accent-color);
+  color: white;
+  cursor: pointer;
+  transition: opacity 0.3s;
 }
 
-.card h3 {
-  margin-bottom: 12px;
+button:hover {
+  opacity: 0.9;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.social-links a {
   font-size: 1.5rem;
-  font-weight: 500;
-  color: #111; /* Cor do título do card */
+  color: var(--secondary-color);
+  transition: color 0.3s;
 }
 
-.card p {
-  color: #555; /* Cor do texto dentro do card */
-  font-size: 1rem;
-}
-
-.card a {
-  color: #0070f3; /* Cor azul para o link */
-  text-decoration: none;
-  font-weight: 500;
-  display: inline-block;
-  margin-top: 10px;
-  transition: color 0.2s ease;
-}
-
-.card a:hover {
-  color: #111; /* Cor do link ao passar o mouse */
-}
-
-/* Contato */
-#contato a {
-  color: #0070f3; /* Cor azul para o link de contato */
-  text-decoration: none;
-}
-
-#contato a:hover {
-  text-decoration: underline;
-}
-
-/* Rodapé */
-footer {
-  text-align: center;
-  padding: 60px 0 20px;
-  font-size: 0.85rem;
-  color: #999; /* Cor mais clara para o rodapé */
-  border-top: 1px solid #eaeaea;
+.social-links a:hover {
+  color: var(--accent-color);
 }
