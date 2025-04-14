@@ -56,8 +56,8 @@ nav a {
 
 nav a:hover,
 nav a.active {
-  border-color: #111; /* Cor do link ao passar o mouse */
-  color: #111;
+  color: #0070f3; /* Altere para a cor desejada para o link ativo */
+  border-bottom: 2px solid #0070f3; /* Ou qualquer estilo para destacar o link ativo */
 }
 
 /* Seções */
