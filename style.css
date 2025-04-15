@@ -148,3 +148,12 @@ body.dark nav a:hover,
 body.dark nav a.active {
   background: rgba(255, 255, 255, 0.1);
 }
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
