@@ -163,8 +163,7 @@ main {
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding: 4rem 1rem;
-  min-height: 80vh;
+  min-height: 60vh;
 }
 
 .inicio h1 {
@@ -196,4 +195,12 @@ main {
 
 .btn:hover {
   background-color: var(--cor-primaria-escura);
+}
+.container {
+  max-width: 960px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: var(--cor-fundo-claro);
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
 }
