@@ -204,3 +204,34 @@ main {
   border-radius: 12px;
   box-shadow: 0 0 10px rgba(0,0,0,0.05);
 }
+.theme-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+  transition: transform 0.2s ease;
+  color: inherit;
+}
+
+.theme-button:hover {
+  transform: scale(1.2);
+}
+body[data-theme="dark"] {
+  background-color: #121212;
+  color: #f1f1f1;
+}
+
+/* Tema claro */
+body[data-theme="light"] {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+/* Botão com estilos opcionais */
+.theme-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+  color: inherit;
+}
