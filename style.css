@@ -157,3 +157,43 @@ body {
 main {
   flex: 1;
 }
+.inicio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 4rem 1rem;
+  min-height: 80vh;
+}
+
+.inicio h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.inicio p {
+  font-size: 1.2rem;
+  max-width: 600px;
+  margin-bottom: 2rem;
+}
+
+.botoes-inicio {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.btn {
+  background-color: var(--cor-primaria);
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: var(--cor-primaria-escura);
+}
