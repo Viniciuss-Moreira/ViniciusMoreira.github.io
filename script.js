@@ -57,7 +57,3 @@ form.addEventListener('submit', async (e) => {
     resposta.style.color = 'red';
   }
 });
-
-document.getElementById('toggle-theme').addEventListener('click', () => {
-  document.body.classList.toggle('dark');
-});
