@@ -24,3 +24,36 @@ document.querySelectorAll('nav a').forEach(link => {
       });
     }
   });
+
+  const form = document.getElementById('form-contato');
+const resposta = document.getElementById('resposta');
+
+form.addEventListener('submit', async (e) => {
+  e.preventDefault();
+
+  const dados = {
+    nome: form.nome.value,
+    email: form.email.value,
+    mensagem: form.mensagem.value,
+  };
+
+  try {
+    const res = await fetch('http://localhost:8080/contato', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(dados)
+    });
+
+    if (!res.ok) throw new Error('Erro na requisição');
+
+    const json = await res.json();
+    resposta.textContent = json.mensagem;
+    resposta.style.color = 'green';
+    form.reset();
+  } catch (error) {
+    resposta.textContent = 'Erro ao enviar. Tente novamente.';
+    resposta.style.color = 'red';
+  }
+});
