@@ -227,72 +227,40 @@ ul li a:hover i {
   color: #0077b5;
 }
 
-section.content {
-  max-width: 480px;
-  margin: 2rem auto;
-  padding: 1.5rem 2rem;
-  background: #f9f9f9;
-  border-radius: 8px;
-  box-shadow: 0 4px 10px rgb(0 0 0 / 0.1);
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+body.dark section.content {
+  background: #222;
+  box-shadow: 0 4px 10px rgb(255 255 255 / 0.1);
+  color: #eee;
 }
 
-section.content h1 {
-  text-align: center;
-  margin-bottom: 1.5rem;
-  color: #333;
+body.dark section.content label {
+  color: #ccc;
 }
 
-section.content label {
-  display: block;
-  margin-bottom: 0.4rem;
-  font-weight: 600;
-  color: #555;
+body.dark section.content input[type="text"],
+body.dark section.content input[type="email"],
+body.dark section.content textarea {
+  background: #333;
+  border: 1.8px solid #555;
+  color: #eee;
 }
 
-section.content input[type="text"],
-section.content input[type="email"],
-section.content textarea {
-  width: 100%;
-  padding: 0.6rem 0.8rem;
-  margin-bottom: 1.2rem;
-  border: 1.8px solid #ccc;
-  border-radius: 6px;
-  font-size: 1rem;
-  transition: border-color 0.3s ease;
-  resize: vertical;
-}
-
-section.content input[type="text"]:focus,
-section.content input[type="email"]:focus,
-section.content textarea:focus {
-  border-color: #007bff;
+body.dark section.content input[type="text"]:focus,
+body.dark section.content input[type="email"]:focus,
+body.dark section.content textarea:focus {
+  border-color: #66aaff;
   outline: none;
 }
 
-section.content button {
-  width: 100%;
-  padding: 0.75rem;
-  background-color: #007bff;
-  border: none;
-  border-radius: 6px;
-  font-size: 1.1rem;
-  color: white;
-  font-weight: 700;
-  cursor: pointer;
-  transition: background-color 0.25s ease;
+body.dark section.content button {
+  background-color: #66aaff;
+  color: #222;
 }
 
-section.content button:hover {
-  background-color: #0056b3;
+body.dark section.content button:hover {
+  background-color: #5599ee;
 }
 
-#resposta {
-  margin-top: 1rem;
-  font-weight: 600;
-  text-align: center;
-}
-
-section.content textarea {
-  min-height: 100px;
+body.dark #resposta {
+  color: #aaddff;
 }
