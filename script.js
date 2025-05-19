@@ -38,7 +38,7 @@ form.addEventListener('submit', async (e) => {
   };
 
   try {
-    const res = await fetch('http://localhost:8080/contato', {
+    const res = await fetch('https://api-do-portfolio.onrender.com', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
