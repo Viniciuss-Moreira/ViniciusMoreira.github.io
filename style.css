@@ -227,45 +227,77 @@ ul li a:hover i {
   color: #0077b5;
 }
 
-body.dark section.content {
-  background-color: #1e1e2f;
-  box-shadow: 0 8px 20px rgba(255, 255, 255, 0.08);
-  color: #ddd;
+section.content {
+  max-width: 600px;
+  margin: 3rem auto;
+  padding: 2rem;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
 }
 
-body.dark section.content h1 {
-  color: #eee;
+section.content h1 {
+  font-weight: 700;
+  color: #222222;
+  text-align: center;
 }
 
-body.dark form#form-contato label {
-  color: #bbb;
+form#form-contato {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
 
-body.dark form#form-contato input[type="text"],
-body.dark form#form-contato input[type="email"],
-body.dark form#form-contato textarea {
-  background-color: #2c2c3e;
-  border: 1.5px solid #555;
-  color: #eee;
+form#form-contato label {
+  font-size: 0.9rem;
+  color: #555555;
+  font-weight: 600;
 }
 
-body.dark form#form-contato input[type="text"]:focus,
-body.dark form#form-contato input[type="email"]:focus,
-body.dark form#form-contato textarea:focus {
-  border-color: #70a8ff;
-  box-shadow: 0 0 8px #70a8ffaa;
+form#form-contato input[type="text"],
+form#form-contato input[type="email"],
+form#form-contato textarea {
+  padding: 0.75rem 1rem;
+  border: 1.5px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+  color: #333333;
+  background-color: #fafafa;
+  transition: border-color 0.25s ease, box-shadow 0.25s ease;
+  resize: vertical;
+}
+
+form#form-contato input[type="text"]:focus,
+form#form-contato input[type="email"]:focus,
+form#form-contato textarea:focus {
+  border-color: #3498db;
+  box-shadow: 0 0 6px #3498dbaa;
   outline: none;
 }
 
-body.dark form#form-contato button {
-  background-color: #70a8ff;
-  color: #1e1e2f;
+form#form-contato button {
+  background-color: #3498db;
+  border: none;
+  padding: 0.85rem;
+  border-radius: 10px;
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
-body.dark form#form-contato button:hover {
-  background-color: #4a7dd9;
+form#form-contato button:hover {
+  background-color: #2874a6;
 }
 
-body.dark #resposta {
-  color: #7ed99e;
+#resposta {
+  text-align: center;
+  font-weight: 600;
+  margin-top: 1rem;
+  color: #27ae60; /* verde para sucesso */
 }
