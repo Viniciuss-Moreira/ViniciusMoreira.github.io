@@ -226,3 +226,46 @@ ul li a i {
 ul li a:hover i {
   color: #0077b5;
 }
+
+body.dark section.content {
+  background-color: #1e1e2f;
+  box-shadow: 0 8px 20px rgba(255, 255, 255, 0.08);
+  color: #ddd;
+}
+
+body.dark section.content h1 {
+  color: #eee;
+}
+
+body.dark form#form-contato label {
+  color: #bbb;
+}
+
+body.dark form#form-contato input[type="text"],
+body.dark form#form-contato input[type="email"],
+body.dark form#form-contato textarea {
+  background-color: #2c2c3e;
+  border: 1.5px solid #555;
+  color: #eee;
+}
+
+body.dark form#form-contato input[type="text"]:focus,
+body.dark form#form-contato input[type="email"]:focus,
+body.dark form#form-contato textarea:focus {
+  border-color: #70a8ff;
+  box-shadow: 0 0 8px #70a8ffaa;
+  outline: none;
+}
+
+body.dark form#form-contato button {
+  background-color: #70a8ff;
+  color: #1e1e2f;
+}
+
+body.dark form#form-contato button:hover {
+  background-color: #4a7dd9;
+}
+
+body.dark #resposta {
+  color: #7ed99e;
+}
