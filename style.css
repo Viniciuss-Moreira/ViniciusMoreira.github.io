@@ -241,6 +241,7 @@ ul li a:hover i {
   gap: 15px;
   flex-wrap: wrap;
   align-items: center;
+  justify-content: flex-end;
 }
 
 .tech-icons img {
